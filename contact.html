@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1"charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Contact Jingru</title>
-    <link ref="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
-    <link ref="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 <body>
@@ -31,16 +31,15 @@
   </header>
   <div>
   <h1>Contact</h1>
-  <form action="" method="post" id="contact-form">
+  <form  method="post" id="contact-form">
     <label class="standard-lable" for="contact-email">E-mail:</label>
     <input type="email" id="contact-email" required>
-    <label for="contact-telephone"> Telephone:</label>
-    <input type="telephone" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
-
+    <label class="standard-lable" for="contact-telephone"> Telephone:</label>
+    <input type="tel" id="contact-telephone">
     <label class="standard-lable" for="contact-message">Message:</label>
-    <textarea tyep="message" id="contact-message"maxlength="240" required></textarea>
+    <textarea id="contact-message" maxlength="240" required></textarea>
     <br>
-    <input id="my-input" type="submit" value="Send Message">
+    <input type="submit" value="Send Message">
   </form>
     <br>
     <a href="mailto:sunjingru19@gmail.com">Contact me:</a>

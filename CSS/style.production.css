@@ -1,26 +1,14 @@
-
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
 /* Colors used
 Text Color (Dark Gray):#2b2b2b;
 Primary Color (Light Blue):#154550;
 Secondary Color (light Red):#DEC3BD*/
-:root {
-  --primary-color:#154550;
-  --secondary-color:#e0b354;
-  --dark-grey:#2b2b2b;
-  --tertiary-color:#489c79;
-  --text-color:#fff;
-  --button-secondary-color:#DEC3BD;
-  --animation-primary-color:#edc655;
-  --animation-Secondary-color:#fcffad;
-  --animation-tertiary-color:#f76414;
-}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -45,12 +33,12 @@ h3{
   font-weight:700;
 }
 a{
-  color: var(--primary-color);
+  color: #154550;
 }
 
 a:visited {
   /* visited link */
-  color: var(--secondary-color);
+  color: #e0b354;
 }
 a:hover,a:focus {
   /*no underlining when hovering over a link */
@@ -58,7 +46,7 @@ a:hover,a:focus {
 }
 a:active {
   /* selected link */
-  color: var(--tertiary-color);
+  color: #489c79;
 }
 .navigation-list {
   list-style-type:none;
@@ -71,16 +59,15 @@ a:active {
   text-decoration: none;
 }
 
-button,
- .button {
+button{
   /* overwrites browser defaults and resets the border */
   border:none;
   /* takes the font from the outer container */
   font-family: inherit;
   /*styles the background color, font color,and
   text decoration (underline,etc.) of the button */
-  background-color: var(--primary-color);
-  color:var(--text-color);
+  background-color: #154550;
+  color:#fff;
   text-decoration:none;
   /*adds spacing to the button(discussed more later) */
   padding:10px;
@@ -89,12 +76,34 @@ button,
   a type of solid,a and a color in RGBA format */
   border-bottom: 2px solid rgba(0,0,0,0.3);
   -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+.button{
+  /* overwrites browser defaults and resets the border */
+  border:none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /*styles the background color, font color,and
+  text decoration (underline,etc.) of the button */
+  background-color: #154550;
+  color:#fff;
+  text-decoration:none;
+  /*adds spacing to the button(discussed more later) */
+  padding:10px;
+  border-radius:3px;
+  /* gives the button a bottom border with a width of 2px,
+  a type of solid,a and a color in RGBA format */
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
 .button__secondary {
-  background-color:var(--button-secondary-color);
-  color:var(--dark-grey);
+  background-color:#DEC3BD;
+  color:#2b2b2b;
 
 }
 button:hover,
@@ -109,7 +118,6 @@ button:focus,
   height:70px;
   }
 .page-header {
-  color:var(--dark-grey);
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
@@ -192,25 +200,25 @@ button:focus,
 
 @-webkit-keyframes color-change {
   0% {
-    fill: fill: var(--animation-primary-color);
+    fill: #edc655;
   }
   50% {
-    fill:var(--animation-Secondary-color);
+    fill: #fcffad;
   }
   100%{
-     fill:var(--animation-tertiary-color);
+     fill:#f76414;
    }
  }
 
 @keyframes color-change {
   0% {
-    fill: var(--animation-primary-color);
+    fill: #edc655;
   }
   50% {
-    fill: var(--animation-Secondary-color);
+    fill: #fcffad;
   }
   100%{
-     fill:var(--animation-tertiary-color);
+     fill:#f76414;
    }
  }
  .sun {
