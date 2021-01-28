@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1"charset="utf-8">
+    <title>Jingru Portfolio</title>
+    <link ref="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+    <link ref="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+<body>
+  <header class="page-header">
+    <img src= "img/logo.png" alt="Jingru-logo" class="page-header__logo">
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+  <h1>Contact</h1>
+  <form action="" method="post" id="contact-form">
+    <label class="standard-lable" for="contact-email">E-mail:</label>
+    <input type="email" id="contact-email" required>
+    <label for="contact-telephone"> Telephone:</label>
+    <input type="telephone" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+
+    <label class="standard-lable" for="contact-message">Message:</label>
+    <textarea tyep="message" id="contact-message"maxlength="240" required></textarea>
+    <br>
+    <input id="my-input" type="submit" value="Send Message">
+  </form>
+    <br>
+    <a href="mailto:sunjingru19@gmail.com">Contact me:</a>
+  <br>
+      Address:1813 15th st.<br>
+    San Francisco.<br>
+    CA,94103 United States<br>
+    <a href="tel:4156228009"> Tel:415-622 8009</a><br>
+    Email:<a href="mailto:sunjingru19@gmail.com"> sunjingru19@gmail.com</a>
+  </div>
+  <footer class="page-footer">
+      <p>Find me on </p>
+      <!--Add descripted logo here-->
+      <div class="social-meida">
+        <img src="img/github_icon.svg" alt="Github">
+        <img src="img/twitter_icon.svg" alt="Twitter">
+        <img src="img/Linkedin_icon.svg" alt="LinkedIn">
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
+</html>

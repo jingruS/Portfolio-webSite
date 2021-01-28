@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/**
+ * Foundation for Sites
+ * Version 6.6.3
+ * https://get.foundation
+ * Licensed under MIT Open Source
+ */
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+h1 {
+  font-size:60px;
+  margin:auto 0;
+  padding:10px
+}
+
+h2 {
+  font-size: 30px;
+  margin: auto 0;
+  padding:30px;
+ }
+ h3 {
+   font-size: 20px;
+   margin: auto 0;
+   padding:10px;
+  }
+
+img {
+  border-style: none; }
+
+  a{
+    color:#154550;
+  }
+  a:visited{
+    color:#05676e;
+  }
+  a:hover,a:focus {
+    text-decoration:none;
+  }
+  a:active {
+    color:#489c79;
+  }
+
+@keyframes box-move{
+  from{
+    transform: translate (0px 20px)
+    }
+  to{
+    transform:translte (20px 40px)
+   }
+ }
+
+
+.box{
+  animation-delay:1s;
+  animation-duration:30s;
+  animation-name: box-move;
+  animation-iternation-count:infinite;
+  animation-direction:alternate;
+  animation-timing-fuction:linear;
+}
+.page-header {
+  clear:both;
+  display:flex;
+  text-align:center;
+  padding:50px 300px;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+ }
+  Button{
+    border:none;
+    font-family:inherit;
+    background-color:#262223
+    color:white;
+    list-style-type:none;
+    padding:50px;
+    border-rdius:5px;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    transition:0.2s opacity;
+  }
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    cursor:pointer;
+    opacity:0.8;
+  }
+  .button{
+    display:flex;
+    text-align:center;
+  }
+  .signup-list {
+    display:grid;
+    grid-template-colums: 1fr 1fr 1fr;
+    grid-gap:20px;
+  }
+  .signup-list__item {
+    background-color:#A2844B;
+    padding:5px 20px;
+  }
+
+
+
+
+
+@keyframes color-change {
+  0%{
+    fill: #edc655;
+  }
+  50%{
+    fill: #fcffad;
+  }
+  100%{
+    fill: #f76414;
+  }
+}
+.house-fly {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes house-move {
+  from {
+    transform: translate(0,0px);
+  }
+  to {
+    transform: translate(0px,-420px);
+  }
+}
+
+.house-float {
+  animation-delay:2s;
+  animation-duration:10s;
+  animation-name: house-move;
+  animation-iternation-count:infinite;
+  animation-direction:alternate;
+  animation-timing-fuction:linear;
+}
+.house-fly {
+  animation-delay:1s;
+  animation-duration:15s;
+  animation-name: house-move;
+  animation-iternation-count:infinite;
+  animation-direction:alternate;
+  animation-timing-fuction:linear;}
+
+@media all and (max-width:500px) and (max-width:750px){
+    .signup-list {
+      grid-template-columns: 1fr 1fr;
+      grid-gap:10px;}
+
+    @media all and (max-width:750px){
+    .signup {
+      grid-gap:10px;
+    }
+    h1 {
+      font-size:60px;
+    }
+  }
